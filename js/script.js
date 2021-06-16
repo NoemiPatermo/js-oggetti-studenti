@@ -13,7 +13,7 @@ for (var x = 0; x < studentList.student.length; x++) {
         
         console.log(k,studentList.student[x][k])
     
-   document.getElementById("output").innerHTML +=  studentList.student[x] [k] + " <br>  "; 
+   document.getElementById("output").innerHTML +=  studentList.student[x] [k] + " \n  "; 
     }
 }
 //PARTE 2
@@ -29,7 +29,7 @@ var gymList = [
     {name: "Eliana", surname: "Patermo", età: "30"}
     ]
 
-    for (var x = 0; x < arrayList.length; x++){
+    for (var x = 0; x < gymList.length; x++){
         console.log(gymList[x].name) //richiamo col . la proprietà che mi interessa far stampare 
         console.log(gymList[x].surname)
 
