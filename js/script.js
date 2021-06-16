@@ -23,21 +23,21 @@ for (var x = 0; x < studentList.student.length; x++) {
 
 //crea array di oggetti di studenti
 
-var arrayList = [
+var gymList = [
     {name: "Noemi", surname: "Patermo", età: "35"},
     {name: "Pietro", surname: "Patermo", età: "33" },
     {name: "Eliana", surname: "Patermo", età: "30"}
     ]
 
     for (var x = 0; x < arrayList.length; x++){
-        console.log(arrayList[x].name) //richiamo col . la proprietà che mi interessa far stamapre 
-        console.log(arrayList[x].surname)
+        console.log(gymList[x].name) //richiamo col . la proprietà che mi interessa far stampare 
+        console.log(gymList[x].surname)
 
     //ALTRO MODO è IL FOR IN 
-        for (var k in arrayList[x]) {
-        console.log(k, arrayList[x][k])
+        for (var k in gymList[x]) {
+        console.log(k, gymList[x][k])
     
-     document.getElementById("output2").innerHTML += arrayList[x] [k] + "   " ;
+     document.getElementById("output2").innerHTML += gymList[x] [k] + "   " ;
     }
  }
 
