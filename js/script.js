@@ -2,20 +2,21 @@
 //Creare un oggetto che descriva uno studente, con le seguenti proprietà: nome, cognome e età.
 // Stampare a schermo attraverso un ciclo for-in tutte le proprietà dell’oggetto.
 
-var studentList = {
-    student : [{name: "Noemi", surname: "Patermo", età: "35"}] //FORSE NON DOVEVO CREARE ARRAY
 
-}
-for (var x = 0; x < studentList.student.length; x++) {
-    console.log(studentList.student[x])
+   var student = {
+       name: "Noemi", 
+       surname: "Patermo", 
+       età: "35"
+    } 
+
     //prendo la chiave all'interno dell'oggetto
-    for (var k in studentList.student[x]) {
+    for (var k in student) {
         
-        console.log(k,studentList.student[x][k])
+        console.log(k,student[k])
     
-   document.getElementById("output").innerHTML +=  studentList.student[x] [k] + " \n  "; 
+   document.getElementById("output").innerHTML +=  student[k] + " \n  "; 
     }
-}
+
 //PARTE 2
 //Creare un array di oggetti di studenti. 
 //Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.  
@@ -30,15 +31,15 @@ var gymList = [
     ]
 
     for (var x = 0; x < gymList.length; x++){
-        console.log(gymList[x].name) //richiamo col . la proprietà che mi interessa far stampare 
+        console.log(gymList[x].name)        //richiamo col . la proprietà che mi interessa far stampare 
         console.log(gymList[x].surname)
 
-    //ALTRO MODO è IL FOR IN 
+    /*ALTRO MODO è IL FOR IN 
         for (var k in gymList[x]) {
         console.log(k, gymList[x][k])
     
      document.getElementById("output2").innerHTML += gymList[x] [k] + "   " ;
-    }
+    }*/
  }
 
 //PARTE 3
